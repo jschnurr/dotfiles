@@ -8,6 +8,10 @@ gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.desktop.screensaver lock-enabled true
 gsettings set org.gnome.desktop.screensaver lock-delay 60
 gsettings set org.gnome.desktop.screensaver show-notifications false
+gsettings set org.gnome.shell.overrides dynamic-workspaces true
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
+gsettings set org.gnome.mutter dynamic-workspaces true
+gsettings set org.gnome.mutter workspaces-only-on-primary false
 
 # Padding around terminal
 echo "vte-terminal {
