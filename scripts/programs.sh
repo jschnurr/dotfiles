@@ -2,6 +2,7 @@
 
 cd programs/
 
+./python.sh
 ./chrome.sh
 ./code.sh
 ./docker.sh
