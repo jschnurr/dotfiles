@@ -16,6 +16,7 @@ alias recents="find . -maxdepth 4 -mtime -90 -printf '%T+\t%s\t%p\n' 2>/dev/null
 
 # python
 alias pip='pip3'
-alias mkenv='python3 -m venv env'
-alias startenv='source env/bin/activate && which python3'
+alias python='python3'
+alias mkenv='python3 -m venv venv'
+alias startenv='source venv/bin/activate && which python3'
 alias stopenv='deactivate'
