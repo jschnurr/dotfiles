@@ -29,9 +29,7 @@ function linkDotfile {
   ln -s ${dotfilesDir}/${1} ${dest}
 }
 
-linkDotfile .bashrc
-linkDotfile .bash_profile
-linkDotfile .bash_aliases
+linkDotfile .zshrc
 linkDotfile .gitconfig
 linkDotfile .gitmessage
-linkDotfile .git-completion.bash
+linkDotfile .git-completion.zsh

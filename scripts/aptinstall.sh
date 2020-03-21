@@ -19,6 +19,7 @@ install curl
 install git
 install htop
 install xclip
+install zsh
 
 # Image processing
 install gimp
