@@ -13,6 +13,10 @@ gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 gsettings set org.gnome.mutter dynamic-workspaces true
 gsettings set org.gnome.mutter workspaces-only-on-primary false
 
+# dock at bottom, launcher on left
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+
 # Padding around terminal
 echo "vte-terminal {
     padding: 10px;
