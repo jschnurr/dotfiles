@@ -9,3 +9,4 @@ cd programs/
 ./gcloud.sh
 ./nvm.sh
 ./virtualbox.sh
+./zshextensions.sh
