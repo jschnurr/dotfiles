@@ -2,7 +2,6 @@
 
 ./symlink.sh
 ./aptinstall.sh
-./programs.sh
 ./desktop.sh
 
 # Get all upgrades
@@ -16,3 +15,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # See our bash changes
 source ~/.zshrc
+
+# install programs
+./programs.sh
