@@ -8,5 +8,6 @@ cd programs/
 ./docker.sh
 ./gcloud.sh
 ./nvm.sh
+./poetry.sh
 ./virtualbox.sh
 ./zshextensions.sh
