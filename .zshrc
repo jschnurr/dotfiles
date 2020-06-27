@@ -150,9 +150,7 @@ alias grep='grep --color=auto'
 alias recents="find . -maxdepth 4 -mtime -90 -printf '%T+\t%s\t%p\n' 2>/dev/null | sort -r | cut -f 3 | cut -d'/' -f-3 | awk '!a[\$0]++'"
 
 # python
-alias pip='pip3'
-alias python='python3'
-alias mkenv='python3 -m venv venv'
-alias startenv='source venv/bin/activate && which python3'
+alias mkenv='python -m venv .venv'
+alias startenv='source .venv/bin/activate && which python'
 alias stopenv='deactivate'
 
