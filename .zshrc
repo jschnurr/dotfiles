@@ -109,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# source bash completions
+source /etc/bash_completion.d/azure-cli
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
