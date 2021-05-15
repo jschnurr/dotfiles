@@ -18,6 +18,10 @@ setopt HIST_VERIFY
 # code for life
 export EDITOR=/usr/bin/code
 
+# ssh
+eval `ssh-agent`
+ssh-add
+
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.git-completion.zsh
 fpath=(~/.zsh $fpath)
@@ -35,6 +39,10 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+if [ -d "$HOME/.local/bin" ] ; then
+  PATH="$PATH:$HOME/.local/bin"
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jschnurr/.oh-my-zsh"
@@ -103,14 +111,14 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions docker docker-compose poetry)
+plugins=(docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # source bash completions
-source /etc/bash_completion.d/azure-cli
+# source /etc/bash_completion.d/azure-cli
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
