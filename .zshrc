@@ -165,3 +165,5 @@ alias mkenv='python -m venv .venv'
 alias startenv='source .venv/bin/activate && which python'
 alias stopenv='deactivate'
 
+# k8s
+alias kubectl='microk8s kubectl'
