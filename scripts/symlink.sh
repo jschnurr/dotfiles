@@ -33,3 +33,4 @@ linkDotfile .zshrc
 linkDotfile .gitconfig
 linkDotfile .gitmessage
 linkDotfile .git-completion.zsh
+linkDotfile .tmux.conf
