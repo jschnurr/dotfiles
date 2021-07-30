@@ -111,7 +111,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker docker-compose)
+plugins=(docker docker-compose ssh-agent kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -165,5 +165,3 @@ alias mkenv='python -m venv .venv'
 alias startenv='source .venv/bin/activate && which python'
 alias stopenv='deactivate'
 
-# k8s
-alias kubectl='microk8s kubectl'
