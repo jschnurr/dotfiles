@@ -19,8 +19,8 @@ setopt HIST_VERIFY
 export EDITOR=/usr/bin/code
 
 # ssh
-eval `ssh-agent`
-ssh-add
+# eval `ssh-agent`
+# ssh-add
 
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.git-completion.zsh
@@ -36,6 +36,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -111,7 +114,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker docker-compose ssh-agent kubectl)
+plugins=(docker docker-compose ssh-agent kubectl golang)
 
 source $ZSH/oh-my-zsh.sh
 
