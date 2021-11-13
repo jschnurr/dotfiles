@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Up from scripts dir
-cd ..
-
 dotfilesDir=$(pwd)
 
 function linkDotfile {
@@ -28,9 +25,3 @@ function linkDotfile {
   echo "Creating new symlink: ${dest}"
   ln -s ${dotfilesDir}/${1} ${dest}
 }
-
-linkDotfile .zshrc
-linkDotfile .gitconfig
-linkDotfile .gitmessage
-linkDotfile .git-completion.zsh
-linkDotfile .tmux.conf
