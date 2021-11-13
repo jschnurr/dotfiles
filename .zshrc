@@ -8,7 +8,7 @@ ZSH_THEME="agnoster"
 zstyle ':omz:update' mode auto      # update automatically without asking
 
 # oh-my-zsh plugins
-plugins=(docker docker-compose ssh-agent kubectl golang git)
+plugins=(docker ssh-agent kubectl golang git-prompt)
 source $ZSH/oh-my-zsh.sh
 
 # Zsh settings for history
