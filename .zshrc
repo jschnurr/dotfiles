@@ -10,6 +10,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # oh-my-zsh plugins
 # custom (must be cloned first): zsh-autosuggestions, zsh-completions
 plugins=(docker ssh-agent kubectl golang git zsh-completions zsh-autosuggestions)
+autoload -Uz compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
 # Zsh settings for history
@@ -27,6 +28,9 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # User configuration
+
+# az-cli uses bash completions so they need to be sourced
+source /etc/bash_completion.d/azure-cli
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
