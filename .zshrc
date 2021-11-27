@@ -61,3 +61,6 @@ alias recents="find . -maxdepth 4 -mtime -90 -printf '%T+\t%s\t%p\n' 2>/dev/null
 alias mkenv='python -m venv .venv'
 alias startenv='source .venv/bin/activate && which python'
 alias stopenv='deactivate'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
