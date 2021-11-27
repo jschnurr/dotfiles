@@ -8,8 +8,8 @@ ZSH_THEME="agnoster"
 zstyle ':omz:update' mode auto      # update automatically without asking
 
 # oh-my-zsh plugins
-# zsh-autosuggestions and zsh-syntax-highlighting are custom and must be git cloned
-plugins=(docker ssh-agent kubectl golang git zsh-autosuggestions zsh-syntax-highlighting)
+# custom (must be cloned first): zsh-autosuggestions, zsh-completions
+plugins=(docker ssh-agent kubectl golang git zsh-completions zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # Zsh settings for history
