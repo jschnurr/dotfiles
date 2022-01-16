@@ -19,7 +19,7 @@ SAVEHIST=100000
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
-export $PATH:$GOPATH/bin
+export $PATH:$HOME/go/bin
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
