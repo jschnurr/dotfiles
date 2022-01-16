@@ -9,7 +9,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # oh-my-zsh plugins
 # custom (must be cloned first): zsh-autosuggestions, zsh-completions
-plugins=(docker ssh-agent kubectl golang git zsh-completions zsh-autosuggestions)
+plugins=(docker ssh-agent nvm kubectl golang git zsh-completions zsh-autosuggestions)
 autoload -Uz compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
@@ -19,6 +19,7 @@ SAVEHIST=100000
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
+export $PATH:$GOPATH/bin
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
