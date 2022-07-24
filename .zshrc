@@ -9,7 +9,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # oh-my-zsh plugins
 # custom (must be cloned first): zsh-autosuggestions, zsh-completions
-plugins=(docker ssh-agent nvm kubectl golang git zsh-completions zsh-autosuggestions)
+plugins=(docker ssh-agent nvm kubectl golang git gcloud zsh-completions zsh-autosuggestions)
 autoload -Uz compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
